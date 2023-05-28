@@ -9,6 +9,7 @@ import Objective from './Components/Objective';
 import Invest from './Components/Invest';
 import Books from './Components/Books';
 import Video from './Components/Video';
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Books/>
       <Invest/>
       <Video/>
+      <Contact/>
     
 
       

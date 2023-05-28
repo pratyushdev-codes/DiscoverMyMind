@@ -49,7 +49,7 @@ function Objective() {
       <div style={contentStyle2}>
         Discover My Mind is a community of people dedicated to Emotional Intelligence and related sciences.<br/> This is designed for educationists, parents, counsellors, coaches, and psychotherapists. <br/>With the help of eminent contributors and participants, our main objectives are:
       </div>
-      <br/><br/>
+      <br/>
       <div style={containerStyle}>
         <img src="./images/objective.jpg" alt="Example Image" style={imageStyle} />
         <div style={contentStyle}>

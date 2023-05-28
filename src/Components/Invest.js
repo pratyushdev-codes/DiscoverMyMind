@@ -72,6 +72,8 @@ At Discover My Mind, we have the best value proposition. This is the result of w
           <button style={downStyle}>Join the Group</button>
         </div>
       </div>
+      <br/>
+      <br/>
     </div>
   );
 }
