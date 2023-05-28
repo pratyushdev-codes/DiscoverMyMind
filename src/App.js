@@ -8,6 +8,7 @@ import Why from './Components/Why';
 import Objective from './Components/Objective';
 import Invest from './Components/Invest';
 import Books from './Components/Books';
+import Video from './Components/Video';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Objective/>
       <Books/>
       <Invest/>
+      <Video/>
     
 
       

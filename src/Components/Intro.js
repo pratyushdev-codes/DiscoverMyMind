@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Objective() {
+function Intro() {
   const introStyle = {
     fontFamily: "PT sans",
     color: "#65A0FB",
@@ -67,11 +67,11 @@ function Objective() {
         <img src="./images/brain.gif" alt="Example Image" style={imageStyle} />
         <div style={contentStyle2}>
           Emotional Intelligence is the ability to understand, evaluate, regulate, and employ emotions to maximize <br/>our abilities, inter and intra-personal relationships, and self-awareness. We have several options that enhance<br/> your child’s multiple intelligence, learning abilities, and talents. This is done by mapping the intellect with proven <br/>tests used by leading educationists worldwide.<br/><br/>
-          <button style={downStyle}>Join the Group</button>
+          <button style={downStyle}>Read More</button>
         </div>
       </div>
     </div>
   );
 }
 
-export default Objective;
+export default Intro;
