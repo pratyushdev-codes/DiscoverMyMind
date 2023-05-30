@@ -28,7 +28,8 @@ function Objective() {
     width: "500px",
     height: "500px",
     borderRadius: "20px",
-    marginLeft:"280px"
+    marginLeft: "280px",
+    transition: "transform 0.3s"
   };
   
   const contentStyle2 = {
@@ -42,6 +43,13 @@ function Objective() {
 
   return (
     <div>
+      <style>
+        {`
+        .zoom-image-container:hover img {
+          transform: scale(1.2);
+        }
+        `}
+      </style>
       <br />
       <div style={introStyle}>
         <h2>Our Objective:</h2>
@@ -51,7 +59,9 @@ function Objective() {
       </div>
       <br/>
       <div style={containerStyle}>
-        <img src="./images/objective.jpg" alt="Example Image" style={imageStyle} />
+        <div className="zoom-image-container">
+          <img src="./images/objective.jpg" alt="Example Image" style={imageStyle} />
+        </div>
         <div style={contentStyle}>
           <p> • Need of the hour education and awareness on the subject matter.</p>
           <p> • Provide training and certification of teachers and coaches.</p>

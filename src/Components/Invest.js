@@ -58,7 +58,7 @@ function Invest() {
 
   return (
     <div>
-      <br />
+      <br /><br/>
       <div style={introStyle}>
         <h2>Invest in your mind. It is the most precious asset we have</h2>
       </div><br/>
