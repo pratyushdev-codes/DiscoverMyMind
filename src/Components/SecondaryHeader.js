@@ -2,13 +2,16 @@ import React from 'react';
 
 function SecondaryHeader() {
   const linkStyle = {
-    marginRight: "20px",
+    textAlign: "right",
     color: "white",
+    
     marginTop: "10px",
     textDecoration: "none",
     fontSize: "16px",
     fontWeight: "600",
     fontFamily: "'GG Gothic Rounder', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+    display: "inline-block",
+    marginRight: "20px",
   };
 
   const buttonStyle = {
@@ -17,13 +20,16 @@ function SecondaryHeader() {
     fontSize: "15px",
     color: "black",
     padding: "10px 20px",
-    textAlign: "center",
+    marginTop: "10px",
     textDecoration: "none",
     display: "inline-block",
     margin: "4px 2px",
     cursor: "pointer",
     borderRadius: "16px",
     fontWeight: "bold",
+    position: "absolute",
+    top: "2px",
+    right: "-120px",
   };
 
   const downStyle = {
@@ -41,40 +47,32 @@ function SecondaryHeader() {
     borderRadius: "16px",
   };
 
-  const header = {
-    textAlign: "center",
-    fontSize: "50px",
-    fontWeight: "250px",
-    fontFamily: "PT Sans",
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
-  };
-
   const headerconent = {
     textAlign: "center",
     fontSize: "23px",
     fontWeight: "100px",
-    fontFamily: "PT Sans",
+    fontFamily: "'GG Gothic Rounder', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
     position: "absolute",
-    color:"white",
+    color: "white",
     top: "80%",
     left: "50%",
     transform: "translate(-50%, -50%)",
     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
-    whiteSpace: "nowrap", // Added style to keep the text in a single line
+    whiteSpace: "nowrap",
   };
 
   return (
     <div style={{ position: "relative" }}>
-      <img src="./images/ban.jpg" alt="Banner" style={{ width: "99%", paddingTop:"10px", borderRadius: "20px" }} />
-      <div style={{ position: "absolute", top: "10%", left: "46%", transform: "translate(-50%, -50%)" }}>
-        <a href="/books" style={linkStyle}>Our Books</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/profiling" style={linkStyle}>Profiling and Assessment</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/training" style={linkStyle}>Training and Certification</a>&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/about" style={linkStyle}>About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="./images/ban1.jpg" alt="Banner" style={{ width: "100%", minHeight: "713px", objectFit: "cover" }} />
+      <div style={{ position: "absolute", top: "10%", left: "50%", transform: "translate(-50%, -50%)" }}>
+        <a href="/discovermymind"><img src="./images/logo.png" style={{ borderRadius: "50px", width: "9%", height: "9%", marginLeft: "-70px" }} alt="Logo" /></a>
+        <span>
+          {/* <a href="/books" style={linkStyle}>Discover My Mind</a> */}
+          <a href="/books" style={linkStyle}>Our Books</a>
+          <a href="/profiling" style={linkStyle}>Profiling and Assessment</a>
+          <a href="/training" style={linkStyle}>Training and Certification</a>
+          <a href="/about" style={linkStyle}>About Us</a>
+        </span>
         <button style={buttonStyle}>Contact Us</button>
       </div>
       <div style={{ position: "absolute", top: "83%", left: "50%", transform: "translate(-50%, -50%)" }}>
@@ -87,4 +85,5 @@ function SecondaryHeader() {
     </div>
   );
 }
+
 export default SecondaryHeader;
